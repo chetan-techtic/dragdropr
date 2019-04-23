@@ -1,0 +1,8 @@
+{
+    "globals": {
+        "useDropzone": true
+    },
+    "rules": {
+        "no-console": "off"
+    }
+}

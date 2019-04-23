@@ -1,0 +1,77 @@
+.dropzoneInner {
+  align-content: center;
+  align-self: center;
+  width: 100%;
+}
+
+.displayText {
+  text-align: center;
+}
+
+.thumbsContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.uploadSection{
+  display: flex;
+  flex-direction: row;
+  .dropzone{
+    flex-shrink: 1;
+    width: 100%;
+  }
+  .uploadList{
+    flex-shrink: 0;
+    max-height: 400px;
+    overflow: auto;
+  }
+}
+
+.thumb {
+  border-radius: 2px;
+  margin-bottom: 8px;
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative;
+  padding: 5px;
+
+  .thumbInner {
+    overflow: hidden;
+    line-height: 1px;
+    .deleteButton button {
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      border: none;
+      z-index: 99;
+      line-height: 25px;
+      width: 25px;
+      padding: 0;
+    }
+    .img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+.firstPreview {
+  max-width: 300px;
+  max-height: 300px;
+  text-align: center;
+  margin: 0 auto;
+  .thumbInner {
+    .img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
